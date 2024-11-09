@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Valenzuela - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/avlog1.jpg">
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="
+https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
+"></script>
+
+
+
+
+
+</head>
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <header>
+        <div class="logo">JohelCode</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button class="dark-mode" id="theme-toggle">
+                    <i id="theme-icon" class='bx bxs-moon'></i> <!-- Icono inicial -->
+                </button>
+                
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="greeting">Hey, I'm Anthony Valenzuela 👋</div>
+                <div class="typewriter">
+                    <h1><span class="highlight">Front</span>end Developer</h1>
+                </div>
+                <p class="description">
+                    I'm a frontend developer based in Costa Rica, I'll help you build beautiful websites your users will love.
+                </p>
+                <div class="cta-buttons">
+                    <a href="img/AnthonyValenzuelaResume.pdf" class="btn primary" target="_blank">Download CV</a>
+                    <a href="#contact" class="btn secondary">Contact me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image"></div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>My <span class="highlight">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class='bx bxl-html5 html'></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-css3' ></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-javascript' ></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-react' ></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-git' ></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-tailwind-css' ></i>
+                    <h3>TailwindCSS</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class='bx bxl-mongodb' ></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-mongodb' ></i>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-php' ></i>
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-bootstrap' ></i>
+                    <h3>Boostrap</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-sass' ></i>
+                    <h3>SASS</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <img class="project-image" src="/img/tiendacelulares.png" alt="tiendacelulares">
+                    <h3>Tienda de Celulares</h3>
+                    <p>Tienda online para la venta de celulares, cuanta con carrito y filtros de búsqueda.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://shopi-phone.netlify.app/" class="btn secondary" target="_blank">View Live</a>
+                        <a href="#" class="btn outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="/img/pacientes.png" alt="pacientes">
+                    <h3>Administrador de pacientes</h3>
+                    <p>Sistema para administrar las citas de los pacientes de veterinaria.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>TailwindCSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://adminvet-pacientes.netlify.app/" class="btn secondary" target="_blank">View Live</a>
+                        <a href="#" class="btn outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="/img/gastosemanal.png" alt="gastosemanal">
+                    <h3>Control de Gasto Semanal</h3>
+                    <p>Aplicación web para controlar tus gastos semanales.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>Boostrap</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://listadegastossemanal.netlify.app/" class="btn secondary" target="_blank">View Live</a>
+                        <a href="#" class="btn outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="/img/aseguratuauto.png" alt="aseguratuauto">
+                    <h3>Asegura tu Auto</h3>
+                    <p>Sistema para cotizar los seguros de tu auto según su modelo y año.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://aseguratuauto.netlify.app/" class="btn secondary" target="_blank">View Live</a>
+                        <a href="#" class="btn outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="/img/bayislandcruises.png" alt="github">
+                    <h3>Bay Island Cruises</h3>
+                    <p>Sistema de web para el control de inventario y ventas para la empresa Bay Island Cruises</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://zekjuno.nyc.dom.my.id/" class="btn secondary" target="_blank">View Live</a>
+                        <a href="#" class="btn outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="/img/github.webp" alt="github">
+                    <h3>Nuevo Proyecto...</h3>
+                    <p>Nueva Descripción...</p>
+                    <div class="project-tags">
+                        <span>etiqueta</span>
+                        <span>etiqueta</span>
+                        <span>etiqueta</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://listadegastossemanal.netlify.app/" class="btn secondary" target="_blank">View Live</a>
+                        <a href="#" class="btn outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="/img/github.webp" alt="github">
+                    <h3>Nuevo Proyecto...</h3>
+                    <p>Nueva Descripción...</p>
+                    <div class="project-tags">
+                        <span>etiqueta</span>
+                        <span>etiqueta</span>
+                        <span>etiqueta</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://adminvet-pacientes.netlify.app/" class="btn secondary" target="_blank">View Live</a>
+                        <a href="#" class="btn outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="/img/github.webp" alt="github">
+                    <h3>Nuevo Proyecto...</h3>
+                    <p>Nueva Descripción...</p>
+                    <div class="project-tags">
+                        <span>etiqueta</span>
+                        <span>etiqueta</span>
+                        <span>etiqueta</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://listadegastossemanal.netlify.app/" class="btn secondary" target="_blank">View Live</a>
+                        <a href="#" class="btn outline">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/img/github.webp" alt="dev">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Soy Anthony Valenzuela Torres, desarrollador web de 23 años de Costa Rica, actualmente cursando la carrera de Ingeniería Informática. Me especializo en el desarrollo web y cuento con experiencia en tecnologías como HTML, CSS, JavaScript y PHP, las cuales he aplicado en una variedad de proyectos relevantes que demuestran mi compromiso con la creación de soluciones funcionales y optimizadas.
+                    </p>
+                    <!-- <p>
+                        A lo largo de mi formación académica y proyectos, he cultivado una mentalidad orientada a mejorar la experiencia del usuario y a desarrollar soluciones eficientes que generen impacto. Mi enfoque no solo se centra en resolver problemas técnicos, sino también en crear interfaces intuitivas y accesibles que faciliten la interacción del usuario con la tecnología.
+                    </p> -->
+                    <p>
+                        Soy una persona curiosa y apasionada por las tecnologías emergentes, siempre en busca de oportunidades para aprender y adaptarme a los cambios rápidos de la industria. Creo firmemente que el aprendizaje continuo y la adaptación son esenciales en el desarrollo tecnológico, y me esfuerzo por mantenerme al tanto de las últimas tendencias y herramientas.
+                    </p>
+                    <!-- <p>
+                        Mi objetivo profesional es consolidar una carrera en la industria tecnológica, contribuyendo con soluciones innovadoras y de alto rendimiento que potencien la experiencia del usuario y agreguen valor en cada proyecto. Estoy siempre abierto a nuevos desafíos que me permitan crecer y aportar mis conocimientos y habilidades a equipos de trabajo comprometidos con la excelencia.
+                    </p> -->
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                
+                    <!-- Mensaje de respuesta -->
+                    <p id="responseMessage" style="display: none;"></p>
+                    
+                    <!-- Loader visible cuando se hace click en el botón -->
+                    <div class="loader" style="display: none;"></div>
+                </form>
+                
+                  
+                  
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="contact-icon email"></i>
+                        <h3>Email</h3>
+                        <p>johel.valenzuela@outlook.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="contact-icon location"></i>
+                        <h3>Location</h3>
+                        <p>Costa Rica</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/JohelValenzuela" class="social-link" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/anthony-johel-valenzuela-torres-39a77b30a/" class="social-link" target="_blank">LinkedIn</a>
+                        <a href="#" class="social-link" target="_blank">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 JohelCode. All rights reserved.</p>
+    </footer>
+
+
+    <script src="main.js"></script>
+
+
+
+</body>
+</html>
